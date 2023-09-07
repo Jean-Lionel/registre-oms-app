@@ -29,6 +29,51 @@
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
+
+    <script src="/ct11/ect/icd11ect-1.6.js"></script>
+
+    <script>
+      const apiServerUrl = "http://localhost:6382";
+      // alert(apiServerUrl);
+      console.log("apiServerUrl: " + apiServerUrl);
+      if (apiServerUrl == "" || apiServerUrl == null) {
+        apiServerUrl = "http://localhost:6382";
+      }
+      const settings = {
+        apiServerUrl: apiServerUrl,
+        apiSecured: false,
+        icdMinorVersion: "2023-01",
+        icdLinearization: "mms",
+        language: "en",
+        sourceApp: "ICD-11 Coding Tool (API)",
+        height: "calc(100vh - 210px)",
+      };
+      const element = null;
+      const callbacks = {
+        searchStartedFunction: () => {
+          document.getElementById("loading-gif").classList.remove("hide");
+        },
+        searchEndedFunction: () => {
+          document.getElementById("loading-gif").classList.add("hide");
+        },
+      };
+
+      ECT.Handler.configure(settings, callbacks);
+    </script>
+
+    <!-- <script>
+      document.addEventListener("click", function (event) {
+        const clipboard = document.getElementsByClassName("clipboard");
+        if (clipboard.length > 0) {
+          alert(clipboard[0].innerHTML + clipboard[0].title);
+          console.log(clipboard[0].innerHTML);
+          console.log(clipboard[0].title);
+        } /*
+    console.log( "Clic détecté à l'emplacement :", event.clientX, event.clientY
+    ); console.log("Élément ciblé :", event.target); */
+      });
+    </script> -->
+
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.

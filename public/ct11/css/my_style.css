@@ -1,0 +1,11 @@
+.flex-card-item {
+  margin: 0 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.rigth-side {
+  width: 80wh;
+  margin-right: 20px;
+  padding-right: 20px;
+}
