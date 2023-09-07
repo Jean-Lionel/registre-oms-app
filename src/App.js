@@ -1,10 +1,10 @@
 import './App.css';
-import ExamenComponent from './components/ExamenComponent';
 
+import AppRouter from './routes/AppRouter';
 function App() {
     return (
         <div className="App">
-            <ExamenComponent />
+            <AppRouter />
         </div>
     );
 }
