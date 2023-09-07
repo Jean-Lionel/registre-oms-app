@@ -6,11 +6,13 @@ import { BrowserRouter as Router, Route, Link, Routes } from 'react-router-dom';
 import Home from "../pages/Home"
 import Examen from '../pages/Examen';
 import AppBarComponent from '../components/AppBar';
+import NavBarRouter from '../components/navBar/NavBarRouter';
 
 export default function AppRouter() {
     return (
         <Router>
             <AppBarComponent />
+            <NavBarRouter />
             <div>
                 <nav>
                     <ul>

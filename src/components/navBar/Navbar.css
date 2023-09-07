@@ -1,0 +1,38 @@
+/* Navbar styles */
+.navbar {
+  background-color: #1565c0;
+  padding: 5px;
+}
+
+.active-link {
+  color: #ff6600; /* Change to your desired active link color */
+  font-weight: bold;
+}
+
+/* Navigation list styles */
+.nav-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+/* List item styles */
+.nav-item {
+  margin: 0;
+}
+
+/* Anchor (link) styles */
+.nav-item a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 18px;
+  transition: color 0.2s;
+}
+
+/* Hover effect for links */
+.nav-item a:hover {
+  color: #ff6600; /* Change to your desired hover color */
+}
