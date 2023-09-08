@@ -1,11 +1,11 @@
 
 import FormHospitalisation from "../components/consultations/FormHospitalisation";
 
-const Hospitalisation = () => {
+const BlocOperatoire = () => {
     return (<>
-        <h4>Hospitalisation</h4>
+        <h4>Bloc Opératoire</h4>
         <FormHospitalisation />
     </>);
 }
 
-export default Hospitalisation;
+export default BlocOperatoire;

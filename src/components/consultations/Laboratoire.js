@@ -5,7 +5,7 @@ import Grid from '@mui/material/Grid';
 import ChallengeComponet from '../Examen/challenge/ChallengeComponet';
 import { Box, FormControl, InputLabel, MenuItem, Select } from '@mui/material';
 
-const FormHospitalisation = () => {
+const Laboratoire = () => {
     // The empty dependency array ensures this effect runs only once on mount
     let listeItem = "";
     const [formData, setFormData] = useState({
@@ -248,6 +248,6 @@ const FormHospitalisation = () => {
     );
 };
 
-export default FormHospitalisation;
+export default Laboratoire;
 
 
