@@ -1,4 +1,4 @@
-import { Link, NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import './Navbar.css';
 
 const routes = [
@@ -23,6 +23,10 @@ const NavBarRouter = () => {
                             {route.title}
                         </NavLink>
                     </li>))}
+                    <li className="nav-item">
+                        <a href="/constulations">Consultation</a>
+                    </li>
+
 
                 </ul>
             </nav>

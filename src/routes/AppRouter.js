@@ -7,6 +7,7 @@ import Home from "../pages/Home"
 import Examen from '../pages/Examen';
 import AppBarComponent from '../components/AppBar';
 import NavBarRouter from '../components/navBar/NavBarRouter';
+import ConsultationPage from '../pages/ConsultationPage';
 
 export default function AppRouter() {
     return (
@@ -14,21 +15,12 @@ export default function AppRouter() {
             <AppBarComponent />
             <NavBarRouter />
             <div>
-                <nav>
-                    <ul>
-                        <li>
-                            <Link to="/">Home</Link>
-                        </li>
-                        <li>
-                            <Link to="/examen">Examen</Link>
-                        </li>
-                    </ul>
-                </nav>
-
-                {/* 👇️ Wrap your Route components in a Routes component */}
                 <Routes>
                     <Route exact path="/" Component={Home} />
                     <Route path="/examen" element={<Examen />} />
+                    <Route path="/constulations" element={<ConsultationPage />} />
+
+
                 </Routes>
             </div>
         </Router>
