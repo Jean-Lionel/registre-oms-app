@@ -8,7 +8,7 @@ const routes = [
     },
     {
         path: '/examen',
-        title: 'Examen',
+        title: 'Test',
     },
 
 ];
@@ -26,8 +26,15 @@ const NavBarRouter = () => {
                     <li className="nav-item">
                         <a href="/constulations">Consultation</a>
                     </li>
-
-
+                    <li className="nav-item">
+                        <a href="/hospitalization">Hospitalisation</a>
+                    </li>
+                    <li className="nav-item">
+                        <a href="/laboratoire">Laboratoire</a>
+                    </li>
+                    <li className="nav-item">
+                        <a href="/boc-operatoire">Bloc Opératoire</a>
+                    </li>
                 </ul>
             </nav>
         </>

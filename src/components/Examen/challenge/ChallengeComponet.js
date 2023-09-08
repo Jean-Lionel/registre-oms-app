@@ -3,7 +3,7 @@ import "../ct11/css/icd_style.css"
 import "../ct11/css/my_style.css"
 import React, { useEffect } from 'react';
 
-const ChallengeComponet = () => {
+const ChallengeComponet = ({ selectedItem }) => {
 
     useEffect(() => {
         const handleClick = (event) => {
@@ -12,6 +12,8 @@ const ChallengeComponet = () => {
                 // alert(clipboard[0].innerHTML + clipboard[0].title);
                 console.log(clipboard[0].innerHTML);
                 console.log(clipboard[0].title);
+
+                selectedItem(clipboard[0].title);
             }
             /*
             console.log( "Clic détecté à l'emplacement :", event.clientX, event.clientY
